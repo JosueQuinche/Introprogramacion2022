@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Tarea6 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Ingrese el tiempo en minutos (numeor entero)");
+        System.out.println("Ingrese el tiempo en minutos");
         int tiempo = teclado.nextInt();
         int dias = 0;
         int horas = 0;
