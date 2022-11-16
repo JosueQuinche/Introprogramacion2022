@@ -10,8 +10,12 @@ public class Tarea7 {
         System.out.println("Ingrese  el segundo numero");
         int num2 = teclado.nextInt();
         if (num1>num2){
-            System.out.println("El primer numero es mayor ");
-        }else
-            System.out.println("El primer numero es menor");
+            System.out.println("El primer numero es mayor "+num1);
+        }else if (num2>num1){
+            System.out.println("El primer numero es menor"+num1);
+        }else {
+            System.out.println("los numeros son iguales");
+        }
+
     }
 }
