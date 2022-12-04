@@ -13,7 +13,7 @@ public class EjercicioFinal1 {
         System.out.println("Mes");
         int mes = teclado.nextInt();
         System.out.println("Dia");
-        int dia = teclado.nextInt();
+        int dia = teclado.nextInt();    
 
         if (año >= 0 && año <= 2022){
             if (mes >= 01 && mes<=12){
