@@ -31,7 +31,7 @@ public class AreaFigura {
      * @return
      */
 
-    public double obterner_area_circunferencia(double radio){
+    public static double obterner_area_circunferencia(double radio){
         double area = Math.PI * Math.pow(radio, 2);
         return  area;
     }
