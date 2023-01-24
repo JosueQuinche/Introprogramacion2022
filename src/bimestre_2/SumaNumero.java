@@ -34,6 +34,7 @@ public class SumaNumero {
         MULTIPLICACIÓNButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 int mult = Integer.parseInt( txt_n1.getText() ) * Integer.parseInt( txt_n2.getText() );
                 lbl_resultado.setText(String.valueOf(mult));
 
@@ -42,12 +43,31 @@ public class SumaNumero {
         DIVISIONButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                double n1=0;
+                double n2=0;
+                double div = 0;
+                try{
+                    n1 = Double.parseDouble(txt_n1.getText());
+                    n2 = Double.parseDouble(txt_n2.getText());
+                }catch (Exception ex){
+                    String verificacion = "ERROR EN LOS INGRESO DE DATOS";
+                    lbl_resultado.setText(String.valueOf(verificacion));
+                }
+                try {
+                    div = n1 / n2;
+                    lbl_resultado.setText(String.valueOf(div));
+                }catch (Exception ex){
+                    String verificacion = "ERROR EN LA DIVISION ";
+                    lbl_resultado.setText(String.valueOf(verificacion));
+                }
                 double divi = Integer.parseInt( txt_n1.getText() ) / Integer.parseInt( txt_n2.getText() );
                 lbl_resultado.setText(String.valueOf(divi));
+
 
             }
         });
     }
+
 
 
     public static void main(String[] args) {
@@ -56,4 +76,5 @@ public class SumaNumero {
         incio.pack();
         incio.setVisible(true);
     }
+
 }
